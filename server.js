@@ -1,19 +1,21 @@
 const express = require('express');
 const path = require('path');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'Develop', 'public')));
 
 // API Routes
-require('./routes/apiRoutes')(app);
+apiRoutes(app);
 
 // HTML Routes
-require('./routes/htmlRoutes')(app);
+htmlRoutes(app);
 
 app.listen(PORT, () => {
-    console.log(`Server listening on http://localhost:${PORT}`);
+  console.log(`Server listening on http://localhost:${PORT}`);
 });
