@@ -1,6 +1,6 @@
 # Note Taker - Challenge 11
 
-Description
+## Description
 
 My challenge this week is to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
@@ -28,17 +28,15 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
-## Business Context
-
-This appilcation is targeted at users who are needing to keep track of their personal information, daily tasks or important events. As long as your device is connected to the internet, this application will allow you to have your notes available when and where required.
 
 ## Preview
 
+![Alt text](/public/assets/Screenshot%202023-10-16%20at%204.50.53%20PM.png)
 
 
 
 ## Deployed Link
 
-Ryan: https://ryanzubayer.github.io/Express.js-Challenge-Note-Taker/
+Heroku Deployment Link : https://audrey-note-taker-44dcbcefa89f.herokuapp.com/
 
-GitHub repository URL: https://github.com/ryanzubayer/Express.js-Challenge-Note-Taker/edit/main/README.md
+GitHub repository URL: https://github.com/audidi29/Note-Taker---Challenge-11/tree/main
